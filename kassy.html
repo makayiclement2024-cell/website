@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    justfy-content: center;
+    align-items: center;
+}
+.sidebar {
+    width:0px;
+    overflow: hidden;
+    transition: 0.14s;
+    background-color: white;
+}
+
+.sidebar button {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.show {
+    width: 190px;
+}
+</style>
+</head>
+ 
+<body>
+
+<div class="container">
+    <button onclick="toggleMenu()">☰ Menu</button>
+
+    <div class="sidebar" id="sidebar">
+        <button>Test</button>
+        <button>Assessment</button>
+        <button>Assignment</button>
+        <button>Notes</button>
+    </div>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
