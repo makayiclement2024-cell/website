@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html>
+<head>
+    <tittle> welcome to my website</tittle>
+    <style>
+        body {
+            background-color: gray;
+            background-image:
+            repeating-linear-gradient(
+                90deg,
+                green 0px,
+                green 2px,
+                transparent 2px,
+                transparent 4px
+            );
+            text-align: center;
+        } 
+        h1 {
+            background-color: violet;
+            text-transform: uppercase;
+            padding:20px;
+        }
+        .form-box {
+            background-color: red;
+            padding: 20px;
+        }
+        input, button {
+            display: block;
+            margin: 10px auto;
+        }
+            
+        h3 {
+            background-color: blueviolet;
+            padding: 40px;
+        } 
+        </style>
+        </head>
+        <body>
+            <h1>welcome to login page</h1>
+             <div class="form-box">
+            <input type= "text" id="username" 
+            placeholder= "username"> 
+            <input type="password" id="password"
+            placeholder="password">
+            <button onclick="login()"> login</button> <br> <br>
+            <button onclick="lostpassword()"> lost pasword</button>
+            </div>
+            <script>
+                function login() {
+                console.log("login button clicked");
+                    let user=
+                    document.getElementById("username").value;
+                    let pass=
+                    document.getElementById("password"). value;
+                    if (user=== "admin" && pass=== "1234"){
+                    alert("login successfull")
+                        window.location.href="kassy.html";
+                    } else {
+                        alert("invalid username or password");
+                    }
+                }
+                function lostpassword() {
+                    console.log("lost password button clicked");
+                    alert("please contact support");
+                }
+            </script>
+            <h3>makayiclement@gmail.com</h3> 
+             come and learn with us <br>
+             we are giviving free courses <br>
+             we are clem.tech school of knowledge<br>
+             motto: discipline is a tool to success
+        </html>
+        </body>
